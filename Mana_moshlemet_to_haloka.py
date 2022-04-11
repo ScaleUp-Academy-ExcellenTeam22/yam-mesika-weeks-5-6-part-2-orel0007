@@ -16,7 +16,10 @@ def Mana_moshlemet_to_haloka():
         sum_division = 0
 
 
-# run iterator in range 10
-generator_iterator = Mana_moshlemet_to_haloka()
-for number in range(10):
-    print(next(generator_iterator))
+if __name__ == "__main__":
+    # run iterator in range 10
+    generator_iterator = Mana_moshlemet_to_haloka()
+    for number in range(10):
+        print(next(generator_iterator))
+
+
