@@ -1,18 +1,19 @@
 import itertools
 
 
-def interleave(*args):
+def interleave(*mutable_object_args):
     """
+    The function get mutable objects and chain them to a list by each object
     example: interleave('abc', [1, 2, 3], ('!', '@', '#')) -> ['a', 1, '!', 'b', 2, '@', 'c', 3, '#']
-    :param args:
+    :param mutable_object_args: collection of string, list, tuple.
     :return: list of all args chain
     """
-    return list(itertools.chain.from_iterable(zip(*args)))
+    return list(itertools.chain.from_iterable(zip(*mutable_object_args)))
 
 
 def generator_interleave(*args):
     """
-    Create generator yield each item from the return value of interleave(*args)
+    Creates a generator that yields each item from the return value of interleave(*args)
     :param args:
     :return: yield each object from list
     """
