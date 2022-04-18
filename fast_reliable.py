@@ -3,7 +3,7 @@ from datetime import datetime
 
 def timeit(func):
     """
-    This function is a decorator to check the time running of a function.
+    This function is a decorator to check runtime of a function.
     :param func: decorator on a given function
     :return: wrapper_function decorator
     """
@@ -17,6 +17,7 @@ def timeit(func):
 
 def build_list_and_set_words(file_name):
     """
+    This function open file name input and  insert all words to a list and tuple.
     :param file_name:
     :return: 1) list of the words in the file, 2)set of the words in the file
     """
@@ -28,7 +29,7 @@ def build_list_and_set_words(file_name):
 @timeit
 def average_runtime(iterable_object):
     """
-
+    This function search the word "zwitterion" in the file 1000 times
     :param iterable_object: iterable_object holds 
     :return:
     """
